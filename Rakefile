@@ -1,16 +1,22 @@
 #!/usr/bin/env rake
 
-$: << './lib'
-require File.expand_path( '../lib/watir', __FILE__ )
-
 desc "Prepare bundler"
 task :prebundle do
-   sh 'gem install bundler --version "~> 1.3.1" --no-docs --no-ri'
+   sh 'gem install bundler --version "~> 1.3.1" --no-rdoc --no-ri'
 end
 
 desc "Prepare bundle environment"
 task :pre do
    sh 'bundle install'
+end
+
+desc "Requires"
+task :req do
+   $: << File.expand_path( '../lib', __FILE__ )
+   require 'bundler/gem_helper'
+   require 'watir'
+
+   Bundler::GemHelper.install_tasks
 end
 
 desc "Prepare environment"
@@ -43,20 +49,20 @@ end
 
 desc "Generate gem"
 task :gem do
-   require File.expand_path( '../lib/watir/schema/version', __FILE__ )
    sh 'gem build watir-schema.gemspec'
    sh "gem install watir-schema-#{Watir::Schema::VERSION}.gem"
 end
 
 desc "Distilled clean"
 task :distclean do
-   require File.expand_path( '../lib/watir/schema/version', __FILE__ )
    sh 'git clean -fd'
    sh 'rm -rf $(find -iname "*~")'
 end
 
 task(:default).clear
 task :default => :pre
+task :env => [ :req ]
+task :gem => [ :req ]
 task :build => [ :prebundle, :pre, :gem ]
 task :all => [ :build, :env ]
 
