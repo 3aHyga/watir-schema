@@ -2,7 +2,6 @@
 
 require 'micro-optparse'
 require 'yaml'
-$: << './lib'
 require 'watir/schema'
 
 options = Parser.new do |p|

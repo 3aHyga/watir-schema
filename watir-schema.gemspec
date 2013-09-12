@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
    spec.email         = ["majioa@yandex.ru"]
    spec.description   = %q{The gem is able to run around the clock with report at least every hour. Run of the script can be done with any scheduler like cron}
    spec.summary       = %q{The gem allows automated surfing over web using watir-webdriver}
-   spec.homepage      = ""
+   spec.homepage      = "https://github.com/3aHyga/watir-schema"
    spec.license       = "MIT"
  
    spec.files         = `git ls-files`.split($/)

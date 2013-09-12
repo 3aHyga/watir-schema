@@ -1,5 +1,8 @@
 #!/usr/bin/env rake
 
+$: << './lib'
+require File.expand_path( '../lib/watir', __FILE__ )
+
 desc "Prepare bundler"
 task :prebundle do
    sh 'gem install bundler --version "~> 1.3.1" --no-docs --no-ri'
@@ -12,8 +15,6 @@ end
 
 desc "Prepare environment"
 task :env do
-   require File.expand_path( '../lib/watir', __FILE__ )
-
    files = [ 'http://selenium.googlecode.com/files/selenium-server-2.31.0.zip' ]
    drivers = case RUBY_PLATFORM
          when /linux/
@@ -44,7 +45,7 @@ desc "Generate gem"
 task :gem do
    require File.expand_path( '../lib/watir/schema/version', __FILE__ )
    sh 'gem build watir-schema.gemspec'
-   sh "gem install watir-schema-#{Watir::Scheme::VERSION}.gem"
+   sh "gem install watir-schema-#{Watir::Schema::VERSION}.gem"
 end
 
 desc "Distilled clean"
