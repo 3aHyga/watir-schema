@@ -1,0 +1,46 @@
+---
+default_browser: firefox
+optouts: true
+proxy:
+  run: false
+  port: 8080
+timeouts:
+  load: 120
+  automate: 1200
+browsers:
+  firefox:
+    timeouts:
+      load: 60
+      automate: 600
+  chrome:
+    timeouts:
+      load: 60
+      automate: 300
+  msie:
+    timeouts:
+      load: 60
+      automate: 600
+    data:
+      xp:
+        Cookies: Cookies
+        Cache: Local Settings/Temporary Internet Files/Content.IE5
+        History: Local Settings/History/History.IE5
+      vista:
+        Cookies: AppData/Roaming/Microsoft/Windows/Cookies
+        Content: AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5
+        History: AppData/Local/Microsoft/Windows/History
+  safari:
+    timeouts:
+      load: 30
+      automate: 300
+    data:
+      xp:
+        - Local Settings/Application Data/Apple Computer/Safari
+        - Application Data/Apple Computer/Safari
+      vista:
+        - AppData/Roaming/Apple Computer/Safari
+        - AppData/Local/Apple Computer/Safari
+      ios:
+        - /private/var/mobile/Library
+      macosx:
+        - Library

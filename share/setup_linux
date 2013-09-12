@@ -1,0 +1,14 @@
+#!/bin/bash
+
+root=$1
+
+env=$(cat ~/.bashrc | grep "SELENIUM_SERVER_JAR.*selenium-server-2.31.0.jar")
+if [ -z "$env" ]; then
+   echo "export SELENIUM_SERVER_JAR=$root/selenium-2.31.0/selenium-2.31.0/selenium-server-2.31.0.jar" >> ~/.bashrc
+fi
+
+env=$(cat ~/.bashrc | grep "chromedriver")
+if [ -z "$env" ]; then
+   echo "export PATH=\$PATH:$root" >> ~/.bashrc
+fi
+
