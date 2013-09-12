@@ -61,6 +61,7 @@ end
 
 task(:default).clear
 task :default => :pre
+task :release => [ :req ]
 task :env => [ :req ]
 task :gem => [ :req ]
 task :build => [ :prebundle, :pre, :gem ]
