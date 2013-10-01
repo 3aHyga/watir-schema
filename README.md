@@ -3,7 +3,9 @@
 [![Gem Version](https://badge.fury.io/rb/watir-schema.png)](http://rubygems.org/gems/watir-schema)
 [![Build Status](https://travis-ci.org/3aHyga/watir-schema.png?branch=master)](https://travis-ci.org/3aHyga/watir-schema)
 [![Coverage Status](https://coveralls.io/repos/3aHyga/watir-schema/badge.png)](https://coveralls.io/r/3aHyga/watir-schema)
+<!--
 [![Code Climate](https://codeclimate.com/github/3aHyga/watir-schema.png)](https://codeclimate.com/github/3aHyga/watir-schema)
+-->
 [![Endorse Count](http://api.coderwall.com/3aHyga/endorsecount.png)](http://coderwall.com/3aHyga)
 
 

@@ -71,8 +71,8 @@ namespace :gem do
 
   task :publish => [ :req ] do
     require File.expand_path( '../lib/watir/schema/version', __FILE__ )
-    sh "git tag v#{Watir::Schema::VERSION}"
     sh "gem push watir-schema-#{Watir::Schema::VERSION}.gem"
+    sh "git tag v#{Watir::Schema::VERSION}"
     sh "git push"
     sh "git push --tag"
   end
