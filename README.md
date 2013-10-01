@@ -1,11 +1,18 @@
 # Watir::Schema
 
+[![Gem Version](https://badge.fury.io/rb/watir-schema.png)](http://rubygems.org/gems/watir-schema)
+[![Build Status](https://travis-ci.org/3aHyga/watir-schema.png?branch=master)](https://travis-ci.org/3aHyga/watir-schema)
+[![Coverage Status](https://coveralls.io/repos/3aHyga/watir-schema/badge.png)](https://coveralls.io/r/3aHyga/watir-schema)
+[![Code Climate](https://codeclimate.com/github/3aHyga/watir-schema.png)](https://codeclimate.com/github/3aHyga/watir-schema)
+[![Endorse Count](http://api.coderwall.com/3aHyga/endorsecount.png)](http://coderwall.com/3aHyga)
+
+
 Support multiple platforms (Windows, OS X, etc.) and browsers (Chrome, Firefox, Safari, IE, etc.):
  - Chrome
  - Firefox
  - IE*
  - Safari*
-* - no proxy support
+ * - no proxy support
 
 The tool is able to run around the clock with report at least every hour. Run of the script can be done with any scheduler like cron.
 
@@ -50,6 +57,7 @@ Sample run:
 This will set log level 5 (extremely excessive), surf the web using schema.yaml config, and store browser data in the '~/' folder, and then send report to collected log specified sample@gmail.com.
 
 Help info on the tool:
+
     $ watir-schema -h
     This is a watir-schema script, how to use it see below
        -v, --verbose 1                  enable verbose output, values: 0 to 5
@@ -66,6 +74,7 @@ Help info on the tool:
 ## File schema.yaml
 
 Sample schema.yaml is shewn below:
+
     ---
     report:
       server: smtp.gmail.com
