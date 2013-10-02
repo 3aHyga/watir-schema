@@ -50,6 +50,7 @@ Or install it yourself as:
 ## Usage
 
 Sample run:
+
     $ watir-schema -v 5 -s schema.yaml -d ~/ -e sample@gmail.com
 
 This will set log level 5 (extremely excessive), surf the web using schema.yaml config, and store browser data in the '~/' folder, and then send report to collected log specified sample@gmail.com.
