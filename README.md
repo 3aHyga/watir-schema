@@ -78,21 +78,21 @@ Sample schema.yaml is shewn below:
     report:
       server: smtp.gmail.com
       port: 587
-      domain: networkadvertising.org
-      login: monitoring@networkadvertising.org
+      domain: domain.com
+      login: login@domain.com
       tls: true
-      password: '#rrrjjhdr@'
-      auth_type: :plain #or :plain or :login or :cram_md5
-      from: 'monitoring@networkadvertising.org'
-      from_name: 'NAI Monitoring'
+      password: 'password'
+      auth_type: :plain # or :plain or :login or :cram_md5
+      from: 'login@domain.com'
+      from_name: 'Name of User'
       body: ! "From: %from_name <%from>\n
         Subject: Watir web-surfing report"
     sites:
       google.com:
         schema:
           - 'a:id:gb_70:%C'
-          - 't:id:Email:%S=monitoring@networkadvertising.org='
-          - 't:id:Passwd:%S=#rrrjjhdr@='
+          - 't:id:Email:%S=login@domain.com='
+          - 't:id:Passwd:%S=password='
           - 'i:id:signIn:C'
           - 't:name:q:%S=2012 Audi A6='
           - 'b:name:btnG:C'
