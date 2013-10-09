@@ -1,5 +1,6 @@
 # Watir::Schema
 
+[![Dependency Status](https://gemnasium.com/3aHyga/watir-schema.png)](https://gemnasium.com/3aHyga/watir-schema)
 [![Gem Version](https://badge.fury.io/rb/watir-schema.png)](http://rubygems.org/gems/watir-schema)
 [![Build Status](https://travis-ci.org/3aHyga/watir-schema.png?branch=master)](https://travis-ci.org/3aHyga/watir-schema)
 [![Coverage Status](https://coveralls.io/repos/3aHyga/watir-schema/badge.png)](https://coveralls.io/r/3aHyga/watir-schema)
@@ -8,9 +9,8 @@
 Support multiple platforms (Windows, OS X, etc.) and browsers (Chrome, Firefox, Safari, IE, etc.):
  - Chrome
  - Firefox
- - IE*
- - Safari*
- * - no proxy support
+ - IE (no proxy support)
+ - Safari (no proxy support)
 
 The tool is able to run around the clock with report at least every hour. Run of the script can be done with any scheduler like cron.
 
@@ -28,9 +28,11 @@ Functions:
  - chromedriver: http://code.google.com/p/selenium/wiki/ChromeDriver
 
 ###Windows:
+
  - autohotkey.exe: http://www.autohotkey.com/
  - IEDriverServer.exe: http://code.google.com/p/selenium/wiki/InternetExplorerDriver
  - chromedriver.exe: http://code.google.com/p/selenium/wiki/ChromeDriver
+
 All Programs must be included in PATH variable.
 
 ## Installation
@@ -46,6 +48,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install watir-schema
+
+Then execute the rake task :env that should automatically prepare environment, and install all requirements:
+
+    $ rake env
 
 ## Usage
 
@@ -104,3 +110,4 @@ Sample schema.yaml is shewn below:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
