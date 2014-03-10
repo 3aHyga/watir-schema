@@ -7,6 +7,7 @@
 [![Endorse Count](http://api.coderwall.com/3aHyga/endorsecount.png)](http://coderwall.com/3aHyga)
 
 Support multiple platforms (Windows, OS X, etc.) and browsers (Chrome, Firefox, Safari, IE, etc.):
+
  - Chrome
  - Firefox
  - IE (no proxy support)
@@ -15,6 +16,7 @@ Support multiple platforms (Windows, OS X, etc.) and browsers (Chrome, Firefox, 
 The tool is able to run around the clock with report at least every hour. Run of the script can be done with any scheduler like cron.
 
 Functions:
+
  - Launch a web surfer that will:
   - Allow to use a proxy on 8080 port;
   - Do a deep surf using the specified schema, including, for example, authenticated browsing on numerous websites, interacting with web forms, and random exploration of webpages;
@@ -25,6 +27,7 @@ Functions:
 ## Requirements
 
 ###Linux/MacOSX:
+
  - chromedriver: http://code.google.com/p/selenium/wiki/ChromeDriver
 
 ###Windows:
