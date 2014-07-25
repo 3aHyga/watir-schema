@@ -1,10 +1,10 @@
 # Watir::Schema
 
-[![Dependency Status](https://gemnasium.com/3aHyga/watir-schema.png)](https://gemnasium.com/3aHyga/watir-schema)
+[![Dependency Status](https://gemnasium.com/majioa/watir-schema.png)](https://gemnasium.com/majioa/watir-schema)
 [![Gem Version](https://badge.fury.io/rb/watir-schema.png)](http://rubygems.org/gems/watir-schema)
-[![Build Status](https://travis-ci.org/3aHyga/watir-schema.png?branch=master)](https://travis-ci.org/3aHyga/watir-schema)
-[![Coverage Status](https://coveralls.io/repos/3aHyga/watir-schema/badge.png)](https://coveralls.io/r/3aHyga/watir-schema)
-[![Endorse Count](http://api.coderwall.com/3aHyga/endorsecount.png)](http://coderwall.com/3aHyga)
+[![Build Status](https://travis-ci.org/majioa/watir-schema.png?branch=master)](https://travis-ci.org/majioa/watir-schema)
+[![Coverage Status](https://coveralls.io/repos/majioa/watir-schema/badge.png)](https://coveralls.io/r/majioa/watir-schema)
+[![Endorse Count](http://api.coderwall.com/majioa/endorsecount.png)](http://coderwall.com/majioa)
 
 Support multiple platforms (Windows, OS X, etc.) and browsers (Chrome, Firefox, Safari, IE, etc.):
 
