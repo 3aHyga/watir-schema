@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
    spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
    spec.require_paths = ["lib"]
  
-   spec.add_dependency 'bundler', '~> 1.3.1'
-   spec.add_dependency 'watir-webdriver', '~> 0.6.2'
+   spec.add_dependency 'bundler', '~> 1.3'
+   spec.add_dependency 'watir-webdriver', '~> 0.6'
    spec.add_dependency 'micro-optparse'
    spec.add_dependency 'rdoba', '>= 0.9.1'
 
